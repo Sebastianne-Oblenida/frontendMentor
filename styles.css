@@ -1,0 +1,107 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    content: url('./images/image-product-desktop.jpg');
+    width: 280px;
+    border-radius: 10px 0 0 10px;
+}
+
+.content {
+    color: hsl(228, 12%, 48%);
+    box-sizing: border-box;
+    width: 280px;
+    padding: 25px;
+}
+
+.content p:first-child {
+    margin: 0;
+}
+
+.content p:nth-of-type(3) {
+    line-height: 25px;
+}
+
+.product, .price p:first-child {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 14px 0;
+    line-height: 35px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price p:first-child {
+    color: hsl(158, 36%, 37%);
+    text-decoration: none;
+}
+
+.price p:last-child {
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border-color: white;
+    margin-top: 14px;
+}
+
+.attribution {
+    font-size: 11px;
+    position: absolute;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1440px) {
+    .container {
+        box-sizing: border-box;
+        width: 375px;
+        margin: 30px 15px;
+    }
+    .image {
+        content: url(./images/image-product-mobile.jpg);
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+    .content {
+        width: 100%;
+        padding: 20px 25px;
+    }
+    .content p:first-child {
+        margin: 0;
+    }
+
+}
