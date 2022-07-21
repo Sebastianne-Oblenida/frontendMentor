@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    max-width: 560px;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -85,14 +86,14 @@ button {
     color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 560px) {
     .container {
         box-sizing: border-box;
         width: 375px;
         margin: 30px 15px;
     }
     .image {
-        content: url(./images/image-product-mobile.jpg);
+        content: url('./images/image-product-mobile.jpg');
         width: 100%;
         border-radius: 10px 10px 0 0;
     }
